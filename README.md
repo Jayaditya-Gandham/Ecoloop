@@ -40,7 +40,7 @@ cd ecoloop
 ---
 
 ## 📸 Demo
-![Demo](https://drive.google.com/file/d/1KAuwg8pMA6Opkjrm9Kp6a8vjp6mb4w1n/view?usp=sharing)
+[Demo](https://drive.google.com/file/d/1KAuwg8pMA6Opkjrm9Kp6a8vjp6mb4w1n/view?usp=sharing)
 
 ---
 
