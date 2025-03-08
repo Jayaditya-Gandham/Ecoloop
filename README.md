@@ -20,22 +20,16 @@ EcoLoop is a web-based platform that promotes **eco-friendly recycling** by allo
 
 ## 🛠 Tech Stack
 - 🔹 **Frontend:** HTML, CSS, Bootstrap
-- 🔹 **Backend:** JavaScript, Express.js (for login)
-- 🔹 **Database:** Firebase / MongoDB (for user data & transactions)
 - 🔹 **Styling:** Custom **eco-themed** CSS 🎨
 
 ---
 
 ## 📦 Installation
 
-```sh
+
 # Clone the repository
 git clone https://github.com/your-repo/ecoloop.git
 cd ecoloop
-
-
-
----
 
 ## 🎯 How It Works
 1️⃣ **Sign up/Login** on EcoLoop 🌿  
@@ -45,22 +39,12 @@ cd ecoloop
 
 ---
 
-## 📸 Screenshots
-![Dashboard Preview](https://via.placeholder.com/600x300)
-
----
-
-## 🤝 Contributing
-We welcome contributions! Feel free to **open an issue or PR**.
-
----
-
-## 📜 License
-This project is licensed under the **MIT License**.
+## 📸 Demo
+![Demo](https://drive.google.com/file/d/1KAuwg8pMA6Opkjrm9Kp6a8vjp6mb4w1n/view?usp=sharing)
 
 ---
 
 ## 👤 Author
-👨‍💻 **Jayaditya Gandham** | 🔗 [GitHub](https://github.com/vjdataquesters)
+👨‍💻 **Jayaditya Gandham** | 🔗 [GitHub](https://github.com/jayadityagandham)
 
 🔹 **Let's build a greener world, one recycle at a time!** 🌍💚
