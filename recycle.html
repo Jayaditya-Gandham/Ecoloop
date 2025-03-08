@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Submission - Recycle Platform</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* css/styles.css */
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFFFF; /* White background */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50; /* Green color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+header:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Card styles */
+.card {
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+/* Form labels and titles */
+h2, label {
+    color: #4CAF50; /* Green color */
+}
+
+/* Button styles */
+.btn-submit {
+    background-color: #4CAF50; /* Yellow color */
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #FFC107; 
+}
+footer {
+    background-color: #4CAF50; /* Green color */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        margin-top: 20px;
+    }
+    header, footer {
+        padding: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-success text-white text-center py-3">
+    <h1 class="m-0">Recycle Platform</h1>
+</header>
+
+<!-- Material Submission Form -->
+<main class="container mt-5">
+    <div class="card shadow p-4">
+        <h2 class="text-center mb-4 text-success font-weight-bold">Submit Your Recyclable Materials</h2>
+        <form>
+            <!-- Material Type Selection -->
+            <div class="form-group">
+                <label for="materialType" class="text-success">Material Type</label>
+                <select class="form-control" id="materialType" required>
+                    <option value="" disabled selected>Select Material Type</option>
+                    <option value="plastic">Plastic</option>
+                    <option value="ewaste">E-Waste</option>
+                    <option value="paper">Paper</option>
+                    <option value="glass">Glass</option>
+                    <option value="metal">Metal</option>
+                    <option value="books">Books</option>
+                </select>
+            </div>
+
+            <!-- Material Quantity -->
+            <div class="form-group">
+                <label for="materialQuantity" class="text-success">Quantity (in kg)</label>
+                <input type="number" class="form-control" id="materialQuantity" placeholder="Enter quantity" required>
+            </div>
+
+            <!-- Material Description -->
+            <div class="form-group">
+                <label for="materialDescription" class="text-success">Description</label>
+                <textarea class="form-control" id="materialDescription" rows="3" placeholder="Enter material description" required></textarea>
+            </div>
+
+            <!-- File Upload -->
+            <div class="form-group">
+                <label for="materialImage" class="text-success">Upload Image</label>
+                <input type="file" class="form-control-file" id="materialImage" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-submit">Submit Material</button>
+        </form>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-success text-white text-center py-3 mt-5">
+    <p class="m-0">&copy; 2024 Recycle Platform. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

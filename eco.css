@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1F8E9;
+    color: #212121;
+}
+
+.navbar {
+    background-color: #4CAF50;
+}
+
+.navbar-brand {
+    color: #FFFFFF !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+}
+
+.container h1, .container h2 {
+    color: #4CAF50;
+}
+
+.btn-success {
+    background-color: #8BC34A;
+    border-color: #8BC34A;
+}
+
+.btn-success:hover {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.form-control {
+    border-radius: 0;
+    border-color: #8BC34A;
+}
+
+.form-control:focus {
+    border-color: #4CAF50;
+    box-shadow: none;
+}

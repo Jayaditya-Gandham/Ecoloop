@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLoop - Empowering Sustainability</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F1F8E9;
+            color: #212121;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #4CAF50;
+            padding: 1rem 2rem;
+        }
+
+        .navbar-brand {
+            color: #FFFFFF;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #FFFFFF;
+            margin-left: 1rem;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #FFC107;
+        }
+
+        /* Header Section */
+        .header-section {
+            background: linear-gradient(90deg, #4CAF50 50%, #8BC34A 50%);
+            color: #FFFFFF;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .header-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .header-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .header-section .btn {
+            background-color: #FFC107;
+            color: #212121;
+            padding: 0.75rem 2rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .header-section .btn:hover {
+            background-color: #FFD54F;
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 4rem 0;
+            background-color: #FFFFFF;
+            text-align: center;
+        }
+
+        .features-section .feature {
+            padding: 1.5rem;
+            background-color: #F1F8E9;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .features-section .feature i {
+            font-size: 2.5rem;
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .features-section .feature h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #4CAF50;
+            color: #FFFFFF;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        section {
+    padding: 60px 20px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Verdana', sans-serif;
+    margin: 20px 0;
+}
+
+img {
+    
+    width: 75%;
+    margin-left: 150px;
+    border-radius: 10px;
+}
+
+/* Content with Image Layout */
+.content-with-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.text-content, .image-content {
+    flex: 1;
+    margin: 10px;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+/* Work Step Styles */
+.work-step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.work-step img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.step-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.step-details h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+.btn-52,
+.btn-52 *,
+.btn-52 :after,
+.btn-52 :before,
+.btn-52:after,
+.btn-52:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-52 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #FFC107;
+  background-image: none;
+  color: #000000;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#FFC107, #000000);
+  padding: 0;
+}
+.btn-52:disabled {
+  cursor: default;
+}
+.btn-52:-moz-focusring {
+  outline: auto;
+}
+.btn-52 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-52 [hidden] {
+  display: none;
+}
+.btn-52 {
+  border: 1px solid none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-52 .original {
+  background: #FFC107;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s;
+}
+.btn-52:hover .original {
+  transform: translateY(100%);
+}
+.btn-52 .letters {
+  display: inline-flex;
+}
+.btn-52 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s, opacity 0.2s;
+}
+.btn-52:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+.btn-52:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.btn-52:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+.btn-52:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.btn-52:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+.btn-52:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
+html{
+    scroll-behavior: smooth;
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">EcoLoop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#About"  style="color: #FFFFFF;">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html" style="color: #FFFFFF;">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="signup.html" style="color: #FFFFFF;">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header-section">
+        <div class="container">
+            <h1>Empower Your Sustainability Journey</h1>
+            <p>Trade recyclable waste for valuable coupons and contribute to a greener future. Start your journey with EcoTrade today!</p>
+           <!--<a href="signup.html" class="btn">Get Started</a>s--> 
+            <button class="btn-52">
+                <a href="signup.html" class="original">Get Started</a>
+                <a href="signup.html" style="text-decoration: none; color: #000;"><div class="letters">
+                    <!-- Place each letter in its own element -->
+                    <span>L</span>
+                    <span>e</span>
+                    <span>t</span>
+                    <span>s</span>
+                    <span>G</span>
+                    <span>o</span>
+                  </div></a>
+                
+              </button>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature">
+                        <i class="fas fa-recycle"></i>
+                        <h3>Recycle & Earn</h3>
+                        <p>Exchange your recyclable waste for coupons that can be redeemed for sustainable products.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Eco-Friendly Products</h3>
+                        <p>Access a wide range of environmentally friendly products in our marketplace.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h3>Join the Community</h3>
+                        <p>Be part of a community committed to making a positive impact on the environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="About">
+        <section class="intro">
+            <h2 style="font-weight: bolder;">About</h2>
+            <h2>Welcome to EcoLoop</h2>
+            <p>At EcoLoop, we are committed to creating a sustainable future by revolutionizing the way people manage waste. Our platform not only facilitates easy recycling but also encourages the use of eco-friendly products, ensuring a positive impact on the environment.</p>
+            <img src="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="EcoRecycle Vision">
+        </section>
+    
+        <section class="our-mission">
+            <h2>Our Mission</h2>
+            <div class="content-with-image">
+                <div class="text-content">
+                    <p>Our mission is to make sustainability accessible to everyone. By providing an easy-to-use platform where users can recycle waste and earn rewards, we are making it convenient and rewarding for people to contribute to a cleaner, greener planet. We believe that small actions, when multiplied by millions of people, can transform the world.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://etraverse.com/wp-content/uploads/2023/12/iStock-1135947405.jpg" alt="Mission Image">
+                </div>
+            </div>
+        </section>
+    
+        <section class="how-we-work">
+            <h2>How We Work</h2>
+            <div class="work-step">
+                <img src="https://media.istockphoto.com/id/1356236425/vector/garbage-collection-waste-recycling-and-transportation-in-city.jpg?s=612x612&w=0&k=20&c=isH-eZh-4yN8gHd_miWdasTZxgWWaWZuUZIMGJjz96M=" alt="Collect Waste">
+                <div class="step-details">
+                    <h3>1. Collecting Waste</h3>
+                    <p>We start by helping users collect recyclable waste such as paper, plastic, and cloth at their homes and offices. This waste is then registered on our platform, where users can schedule a pickup.</p>
+                </div>
+            </div>
+            <div class="work-step">
+                <div class="step-details">
+                    <h3>2. Waste Pickup & Recycling</h3>
+                    <p>Our delivery agents collect the waste from users and transport it to our recycling centers. Here, the waste is processed and converted into reusable materials, reducing the burden on landfills and minimizing environmental impact.</p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdyJTuZ-XUUfB5wy9nSiltlL_wht4eW4il0g&s" alt="Waste Pickup">
+    
+            </div>
+            <div class="work-step">
+                <img src="https://cdn.hifives.in/wp-content/uploads/2024/03/Why-Reward-Employees-For-Green-Initiatives.png" alt="Eco-Friendly Products">
+                <div class="step-details">
+                    <h3>3. Rewarding Sustainable Choices</h3>
+                    <p>For every successful recycling submission, users earn points or coupons that can be redeemed for eco-friendly and sustainable products on our platform. This not only encourages recycling but also promotes the use of environmentally friendly products.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="impact">
+            <h2>Our Impact</h2>
+            <div class="content-with-image">
+                <div class="image-content">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRreoFNVFlIHpBX243JSd22bGStIhuonePY0g&s" alt="Environmental Impact">
+                </div>
+                <div class="text-content">
+                    <p>Since our inception, EcoRecycle has diverted thousands of tons of waste from landfills and oceans. Our community of users has collectively made a significant impact on the environment by choosing to recycle and buy sustainable products. Together, we are paving the way for a cleaner and healthier planet.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 EcoLoop. All Rights Reserved. | Empowering Sustainability</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

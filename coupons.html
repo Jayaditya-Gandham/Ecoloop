@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupons, Rewards & Leaderboard - Recycle Platform</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* css/styles.css */
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFFFF; /* White background */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50; /* Green color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+header:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Coupon Card Styles */
+.coupon-card {
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #FFFFFF;
+}
+
+.coupon-card:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.redeem-btn {
+    background-color: #FFC107;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.redeem-btn:hover {
+    background-color: #FFC107; /* Darker yellow */
+    color: black;
+    transform: scale(1.05); /* Slight enlarge */
+}
+
+/* Reward Item Styles */
+.reward-item {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.reward-item:hover {
+    background-color: #E8F5E9; /* Light green background on hover */
+    transform: scale(1.02); /* Slight enlarge */
+}
+
+/* Leaderboard Row Styles */
+.leaderboard-row {
+    transition: background-color 0.3s ease;
+}
+
+.leaderboard-row:hover {
+    background-color: #E8F5E9; /* Light green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        margin-top: 20px;
+    }
+    header, footer {
+        padding: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-success text-white text-center py-3">
+    <h1 class="m-0">Recycle Platform</h1>
+</header>
+
+<!-- Main Content -->
+<main class="container mt-5">
+    <!-- Coupons Section -->
+    <section class="coupons-section mb-5">
+        <div class="card shadow p-4">
+            <h2 class="text-center mb-4 text-success font-weight-bold">Your Coupons</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card coupon-card text-center p-3">
+                        <h4 class="text-success">10% Off</h4>
+                        <p>On Eco-Friendly Products</p>
+                        <button class="btn btn-success btn-sm redeem-btn">Redeem</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card coupon-card text-center p-3">
+                        <h4 class="text-success">$5 Discount</h4>
+                        <p>On Your Next Purchase</p>
+                        <button class="btn btn-success btn-sm redeem-btn">Redeem</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card coupon-card text-center p-3">
+                        <h4 class="text-success">Free Shipping</h4>
+                        <p>On Orders Above $50</p>
+                        <button class="btn btn-success btn-sm redeem-btn">Redeem</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards Section -->
+    <section class="rewards-section mb-5">
+        <div class="card shadow p-4">
+            <h2 class="text-center mb-4 text-success font-weight-bold">Your Rewards</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item reward-item">
+                    <strong>Eco-Warrior Badge</strong> - Earned for recycling 50 kg of materials
+                </li>
+                <li class="list-group-item reward-item">
+                    <strong>Top Recycler of the Month</strong> - Earned in August 2024
+                </li>
+                <li class="list-group-item reward-item">
+                    <strong>Carbon Saver</strong> - Earned for reducing 100 kg of CO2
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="leaderboard-section">
+        <div class="card shadow p-4">
+            <h2 class="text-center mb-4 text-success font-weight-bold">Leaderboard</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Rank</th>
+                        <th scope="col">User</th>
+                        <th scope="col">Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="leaderboard-row">
+                        <th scope="row">1</th>
+                        <td>John Doe</td>
+                        <td>1,200</td>
+                    </tr>
+                    <tr class="leaderboard-row">
+                        <th scope="row">2</th>
+                        <td>Jane Smith</td>
+                        <td>1,050</td>
+                    </tr>
+                    <tr class="leaderboard-row">
+                        <th scope="row">3</th>
+                        <td>Emily Johnson</td>
+                        <td>980</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-success text-white text-center py-3 mt-5">
+    <p class="m-0">&copy; 2024 Recycle Platform. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
