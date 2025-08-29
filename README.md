@@ -28,7 +28,7 @@ EcoLoop is a web-based platform that promotes **eco-friendly recycling** by allo
 
 
 # Clone the repository
-git clone https://github.com/your-repo/ecoloop.git
+git clone https://github.com/jayadityagandham/ecoloop.git
 cd ecoloop
 
 ## 🎯 How It Works
